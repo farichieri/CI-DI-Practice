@@ -1,3 +1,3 @@
 export function getCoolName() {
-  return 'Cool Name';
+  return 'Very Cool Name';
 }
