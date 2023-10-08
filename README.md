@@ -20,10 +20,13 @@ As developers, we write code, and that code needs to be built, to be tested and 
 
 - Work databases are secured and hard to access (behind a VPN)
 - Solution: local test database (2 options)
+
   - Complicated option: real test database implementation
   - Local Test DB
   - Simple option: Docker database - works also on CI-DI
 
-// docker pull mongo
-// docker container run --name mydatabase --publish 27017:27017 -d mongo
-// docker ps
+- // docker pull mongo
+- // docker container run --name mydatabase --publish 27017:27017 -d mongo
+- // docker ps
+
+The docker db configured locally must exist inside our pipeline. (instruct the github workflow to also configure docker locally)
